@@ -1,11 +1,11 @@
-# 🏛️ Ethiopian Federal Property Administration & Asset Management System
+# 🏛️ DMU Property Management System
 
 [![Django Version](https://img.shields.io/badge/Django-4.2+-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![React Version](https://img.shields.io/badge/React-18.x-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![Docker Support](https://img.shields.io/badge/Docker-Supported-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
 
-An enterprise-grade, full-stack asset lifecycle and maintenance management system built specifically for **Dire Dawa Management University (DMU)**. This platform strictly enforces the compliance requirements and operational workflows outlined by the **Ethiopian Federal Property Administration Guidelines**.
+An enterprise-grade, full-stack asset lifecycle and maintenance management system built specifically for **Debre Markos University (DMU)**. This platform strictly enforces the compliance requirements and operational workflows outlined by the **Ethiopian Federal Property Administration Guidelines**.
 
 ---
 
@@ -237,4 +237,4 @@ The system supports strict security controls based on professional university ro
 *   **👥 Staff / Requester:** Can check out allowed general assets, request extensions, and submit/sign-off on maintenance requests.
 
 ---
-*Created for Dire Dawa Management University (DMU) — 2026 graduation project.*
+*Created for Dire Debre Markos University (DMU) — 2026 graduation project.*
