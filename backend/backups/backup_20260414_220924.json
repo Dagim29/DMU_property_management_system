@@ -1,0 +1,4970 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "auditlog"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "users",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "assets",
+    "model": "asset"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "assets",
+    "model": "assetsequence"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "assets",
+    "model": "assettransfer"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "assets",
+    "model": "building"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "assets",
+    "model": "campus"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "assets",
+    "model": "floor"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "assets",
+    "model": "room"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "maintenance",
+    "model": "maintenancerequest"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "maintenance",
+    "model": "preventivemaintenance"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "maintenance",
+    "model": "workorder"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "systemsettings"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "core",
+    "model": "databasebackup"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b2dxqeg13ucxc2ki9akdl84mv9a3nqx8",
+  "fields": {
+    "session_data": ".eJxVjE0OgyAYBe_CuiGoINpl956BfH8U2wYT0VXTuxcTF-12Zt57qwD7lsJeZA0zq6tq1OWXIdBT8iH4Afm-aFryts6oj0SftuhpYXndzvbvIEFJdU1gI4jrSQZPVsYR0FrE2DXetcZL64nRm1g9OPAGXGWRLA_E0FGvPl8W_DlS:1wCGqV:XWK609kdbpB7EjneflBBti1jWSzh9U6nJXdZsKG9CJA",
+    "expire_date": "2026-04-27T12:56:55.974Z"
+  }
+},
+{
+  "model": "core.systemsettings",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-04-14T18:36:06.126Z",
+    "updated_at": "2026-04-14T18:36:06.126Z",
+    "system_name": "DMU Property Management System",
+    "system_email": "admin@dmu.edu.et",
+    "timezone": "Africa/Addis_Ababa",
+    "date_format": "YYYY-MM-DD",
+    "sla_emergency": 24,
+    "sla_high": 72,
+    "sla_medium": 168,
+    "sla_low": 336,
+    "auto_assignment": true,
+    "preventive_maintenance": true,
+    "email_notifications": true,
+    "sms_notifications": false,
+    "notify_on_create": true,
+    "notify_on_assign": true,
+    "notify_on_complete": true,
+    "notify_on_overdue": true,
+    "password_min_length": 8,
+    "password_require_uppercase": true,
+    "password_require_numbers": true,
+    "password_require_special": true,
+    "session_timeout": 60,
+    "max_login_attempts": 5,
+    "max_image_size": 5,
+    "max_report_size": 10,
+    "allowed_image_types": "jpg, jpeg, png, gif",
+    "allowed_report_types": "pdf, doc, docx, xls, xlsx",
+    "auto_backup": true,
+    "backup_frequency": "daily",
+    "backup_retention": 30
+  }
+},
+{
+  "model": "assets.campus",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.905Z",
+    "updated_at": "2026-04-13T13:15:50.905Z",
+    "code": "MAIN",
+    "name": "Main Campus",
+    "address": "Debre Markos, Ethiopia"
+  }
+},
+{
+  "model": "assets.building",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.911Z",
+    "updated_at": "2026-04-13T13:15:50.911Z",
+    "campus": 1,
+    "code": "ADM",
+    "name": "Administration Building",
+    "floors_count": 3
+  }
+},
+{
+  "model": "assets.building",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.916Z",
+    "updated_at": "2026-04-13T13:15:50.916Z",
+    "campus": 1,
+    "code": "LIB",
+    "name": "Library",
+    "floors_count": 4
+  }
+},
+{
+  "model": "assets.floor",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.922Z",
+    "updated_at": "2026-04-13T13:15:50.922Z",
+    "building": 1,
+    "number": 1,
+    "name": "Ground Floor"
+  }
+},
+{
+  "model": "assets.floor",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.926Z",
+    "updated_at": "2026-04-13T13:15:50.926Z",
+    "building": 1,
+    "number": 2,
+    "name": "First Floor"
+  }
+},
+{
+  "model": "assets.floor",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.930Z",
+    "updated_at": "2026-04-13T13:15:50.930Z",
+    "building": 2,
+    "number": 1,
+    "name": "Ground Floor"
+  }
+},
+{
+  "model": "assets.room",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.937Z",
+    "updated_at": "2026-04-13T13:15:50.937Z",
+    "floor": 1,
+    "number": "101",
+    "name": "Reception",
+    "room_type": "Office"
+  }
+},
+{
+  "model": "assets.room",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.941Z",
+    "updated_at": "2026-04-13T13:15:50.941Z",
+    "floor": 2,
+    "number": "201",
+    "name": "IT Department",
+    "room_type": "Office"
+  }
+},
+{
+  "model": "assets.room",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-04-13T13:15:50.943Z",
+    "updated_at": "2026-04-13T13:15:50.943Z",
+    "floor": 3,
+    "number": "L101",
+    "name": "Reading Room",
+    "room_type": "Study Area"
+  }
+},
+{
+  "model": "assets.assetsequence",
+  "pk": 1,
+  "fields": {
+    "campus": 1,
+    "asset_type_code": "EQP",
+    "last_sequence": 2
+  }
+},
+{
+  "model": "assets.assetsequence",
+  "pk": 2,
+  "fields": {
+    "campus": 1,
+    "asset_type_code": "FUR",
+    "last_sequence": 2
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add audit log",
+    "content_type": [
+      "core",
+      "auditlog"
+    ],
+    "codename": "add_auditlog"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change audit log",
+    "content_type": [
+      "core",
+      "auditlog"
+    ],
+    "codename": "change_auditlog"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete audit log",
+    "content_type": [
+      "core",
+      "auditlog"
+    ],
+    "codename": "delete_auditlog"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view audit log",
+    "content_type": [
+      "core",
+      "auditlog"
+    ],
+    "codename": "view_auditlog"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "users",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add asset",
+    "content_type": [
+      "assets",
+      "asset"
+    ],
+    "codename": "add_asset"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change asset",
+    "content_type": [
+      "assets",
+      "asset"
+    ],
+    "codename": "change_asset"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete asset",
+    "content_type": [
+      "assets",
+      "asset"
+    ],
+    "codename": "delete_asset"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view asset",
+    "content_type": [
+      "assets",
+      "asset"
+    ],
+    "codename": "view_asset"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add asset sequence",
+    "content_type": [
+      "assets",
+      "assetsequence"
+    ],
+    "codename": "add_assetsequence"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change asset sequence",
+    "content_type": [
+      "assets",
+      "assetsequence"
+    ],
+    "codename": "change_assetsequence"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete asset sequence",
+    "content_type": [
+      "assets",
+      "assetsequence"
+    ],
+    "codename": "delete_assetsequence"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view asset sequence",
+    "content_type": [
+      "assets",
+      "assetsequence"
+    ],
+    "codename": "view_assetsequence"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add asset transfer",
+    "content_type": [
+      "assets",
+      "assettransfer"
+    ],
+    "codename": "add_assettransfer"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change asset transfer",
+    "content_type": [
+      "assets",
+      "assettransfer"
+    ],
+    "codename": "change_assettransfer"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete asset transfer",
+    "content_type": [
+      "assets",
+      "assettransfer"
+    ],
+    "codename": "delete_assettransfer"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view asset transfer",
+    "content_type": [
+      "assets",
+      "assettransfer"
+    ],
+    "codename": "view_assettransfer"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add building",
+    "content_type": [
+      "assets",
+      "building"
+    ],
+    "codename": "add_building"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change building",
+    "content_type": [
+      "assets",
+      "building"
+    ],
+    "codename": "change_building"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete building",
+    "content_type": [
+      "assets",
+      "building"
+    ],
+    "codename": "delete_building"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view building",
+    "content_type": [
+      "assets",
+      "building"
+    ],
+    "codename": "view_building"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add campus",
+    "content_type": [
+      "assets",
+      "campus"
+    ],
+    "codename": "add_campus"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change campus",
+    "content_type": [
+      "assets",
+      "campus"
+    ],
+    "codename": "change_campus"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete campus",
+    "content_type": [
+      "assets",
+      "campus"
+    ],
+    "codename": "delete_campus"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view campus",
+    "content_type": [
+      "assets",
+      "campus"
+    ],
+    "codename": "view_campus"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add floor",
+    "content_type": [
+      "assets",
+      "floor"
+    ],
+    "codename": "add_floor"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change floor",
+    "content_type": [
+      "assets",
+      "floor"
+    ],
+    "codename": "change_floor"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete floor",
+    "content_type": [
+      "assets",
+      "floor"
+    ],
+    "codename": "delete_floor"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view floor",
+    "content_type": [
+      "assets",
+      "floor"
+    ],
+    "codename": "view_floor"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add room",
+    "content_type": [
+      "assets",
+      "room"
+    ],
+    "codename": "add_room"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change room",
+    "content_type": [
+      "assets",
+      "room"
+    ],
+    "codename": "change_room"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete room",
+    "content_type": [
+      "assets",
+      "room"
+    ],
+    "codename": "delete_room"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view room",
+    "content_type": [
+      "assets",
+      "room"
+    ],
+    "codename": "view_room"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add maintenance request",
+    "content_type": [
+      "maintenance",
+      "maintenancerequest"
+    ],
+    "codename": "add_maintenancerequest"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change maintenance request",
+    "content_type": [
+      "maintenance",
+      "maintenancerequest"
+    ],
+    "codename": "change_maintenancerequest"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete maintenance request",
+    "content_type": [
+      "maintenance",
+      "maintenancerequest"
+    ],
+    "codename": "delete_maintenancerequest"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view maintenance request",
+    "content_type": [
+      "maintenance",
+      "maintenancerequest"
+    ],
+    "codename": "view_maintenancerequest"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add preventive maintenance",
+    "content_type": [
+      "maintenance",
+      "preventivemaintenance"
+    ],
+    "codename": "add_preventivemaintenance"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change preventive maintenance",
+    "content_type": [
+      "maintenance",
+      "preventivemaintenance"
+    ],
+    "codename": "change_preventivemaintenance"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete preventive maintenance",
+    "content_type": [
+      "maintenance",
+      "preventivemaintenance"
+    ],
+    "codename": "delete_preventivemaintenance"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view preventive maintenance",
+    "content_type": [
+      "maintenance",
+      "preventivemaintenance"
+    ],
+    "codename": "view_preventivemaintenance"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add work order",
+    "content_type": [
+      "maintenance",
+      "workorder"
+    ],
+    "codename": "add_workorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change work order",
+    "content_type": [
+      "maintenance",
+      "workorder"
+    ],
+    "codename": "change_workorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete work order",
+    "content_type": [
+      "maintenance",
+      "workorder"
+    ],
+    "codename": "delete_workorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view work order",
+    "content_type": [
+      "maintenance",
+      "workorder"
+    ],
+    "codename": "view_workorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add System Settings",
+    "content_type": [
+      "core",
+      "systemsettings"
+    ],
+    "codename": "add_systemsettings"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change System Settings",
+    "content_type": [
+      "core",
+      "systemsettings"
+    ],
+    "codename": "change_systemsettings"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete System Settings",
+    "content_type": [
+      "core",
+      "systemsettings"
+    ],
+    "codename": "delete_systemsettings"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view System Settings",
+    "content_type": [
+      "core",
+      "systemsettings"
+    ],
+    "codename": "view_systemsettings"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add database backup",
+    "content_type": [
+      "core",
+      "databasebackup"
+    ],
+    "codename": "add_databasebackup"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change database backup",
+    "content_type": [
+      "core",
+      "databasebackup"
+    ],
+    "codename": "change_databasebackup"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete database backup",
+    "content_type": [
+      "core",
+      "databasebackup"
+    ],
+    "codename": "delete_databasebackup"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view database backup",
+    "content_type": [
+      "core",
+      "databasebackup"
+    ],
+    "codename": "view_databasebackup"
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$k5SGcGXAcO5E0mth0HeI6O$dCQPPf8mH9CYEGRP7YXrELQnerJ5lu7pfoBbQ67eVDU=",
+    "last_login": "2026-04-13T12:56:55.972Z",
+    "is_superuser": true,
+    "username": "pms_user",
+    "first_name": "dagim",
+    "last_name": "dada",
+    "email": "dagi@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-13T12:54:41.228Z",
+    "role": "OWNER",
+    "department": "it",
+    "phone": "0965478954",
+    "email_verified": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$bRTZqrLjLB19qnCEPsHQmF$xgNRN63PGpOSxs9n12jYlWBCul3DZHrqAPpH9SBrmqc=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "System",
+    "last_name": "Admin",
+    "email": "admin@dmu.edu.et",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-13T13:15:45.174Z",
+    "role": "SUPER_ADMIN",
+    "department": "",
+    "phone": "",
+    "email_verified": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$M5c4u8Sb4xgkBqgzuX1yBt$cz/LQgJ4ZUBdlXM0kfB5Euq8mUFY2bDQfNtxtJ8yyeE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "manager",
+    "first_name": "Property",
+    "last_name": "Manager",
+    "email": "manager@dmu.edu.et",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-04-13T13:15:46.579Z",
+    "role": "PROPERTY_MANAGER",
+    "department": "Property Management",
+    "phone": "",
+    "email_verified": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$1RZO4NuYI5NewHLoimYUSb$aG5utBTj39HkEFPbZ/gdbyUUczvTKqAFDRxH1deQ9YM=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "supervisor",
+    "first_name": "Maintenance",
+    "last_name": "Supervisor",
+    "email": "supervisor@dmu.edu.et",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-04-13T13:15:48.098Z",
+    "role": "MAINTENANCE_SUPERVISOR",
+    "department": "Maintenance",
+    "phone": "",
+    "email_verified": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$600000$OrhvjsYm73f8P6f2rTzjPG$zyKu68BQ/wxysgHaYpKhPOu8bRrbycbi6UQ67FW1Ff0=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "technician",
+    "first_name": "John",
+    "last_name": "Technician",
+    "email": "tech@dmu.edu.et",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-04-13T13:15:49.467Z",
+    "role": "MAINTENANCE_TECHNICIAN",
+    "department": "Maintenance",
+    "phone": "",
+    "email_verified": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "assets.asset",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-04-13T13:15:51.365Z",
+    "updated_at": "2026-04-13T13:15:51.365Z",
+    "asset_id": "DMU-MAIN-EQP-00001",
+    "name": "Dell Optiplex 7090",
+    "asset_type": "EQP",
+    "status": "IN_USE",
+    "campus": 1,
+    "room": 2,
+    "purchase_date": "2023-01-15",
+    "purchase_cost": "45000.00",
+    "current_value": "40000.00",
+    "specifications": {
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "processor": "Intel Core i7"
+    },
+    "description": "Desktop computer for IT staff",
+    "photo": "",
+    "qr_code": "assets/qrcodes/DMU-MAIN-EQP-00001.png",
+    "assigned_to": [
+      "manager"
+    ]
+  }
+},
+{
+  "model": "assets.asset",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-04-13T13:15:51.378Z",
+    "updated_at": "2026-04-13T13:15:51.378Z",
+    "asset_id": "DMU-MAIN-EQP-00002",
+    "name": "HP LaserJet Pro",
+    "asset_type": "EQP",
+    "status": "AVAILABLE",
+    "campus": 1,
+    "room": 1,
+    "purchase_date": "2023-03-20",
+    "purchase_cost": "15000.00",
+    "current_value": "13000.00",
+    "specifications": {
+      "type": "Laser",
+      "color": "Monochrome",
+      "network": "Ethernet"
+    },
+    "description": "Network printer for reception",
+    "photo": "",
+    "qr_code": "assets/qrcodes/DMU-MAIN-EQP-00002.png",
+    "assigned_to": null
+  }
+},
+{
+  "model": "assets.asset",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-04-13T13:15:51.391Z",
+    "updated_at": "2026-04-13T13:15:51.391Z",
+    "asset_id": "DMU-MAIN-FUR-00001",
+    "name": "Office Desk",
+    "asset_type": "FUR",
+    "status": "IN_USE",
+    "campus": 1,
+    "room": 2,
+    "purchase_date": "2022-06-10",
+    "purchase_cost": "8000.00",
+    "current_value": "6000.00",
+    "specifications": {
+      "material": "Wood",
+      "dimensions": "150x80x75 cm"
+    },
+    "description": "Wooden office desk",
+    "photo": "",
+    "qr_code": "assets/qrcodes/DMU-MAIN-FUR-00001.png",
+    "assigned_to": null
+  }
+},
+{
+  "model": "assets.asset",
+  "pk": 4,
+  "fields": {
+    "created_at": "2026-04-13T13:15:51.403Z",
+    "updated_at": "2026-04-13T13:15:51.403Z",
+    "asset_id": "DMU-MAIN-FUR-00002",
+    "name": "Reading Table",
+    "asset_type": "FUR",
+    "status": "AVAILABLE",
+    "campus": 1,
+    "room": 3,
+    "purchase_date": "2022-08-05",
+    "purchase_cost": "5000.00",
+    "current_value": "4500.00",
+    "specifications": {
+      "seats": "4",
+      "material": "Wood"
+    },
+    "description": "Library reading table",
+    "photo": "",
+    "qr_code": "assets/qrcodes/DMU-MAIN-FUR-00002.png",
+    "assigned_to": null
+  }
+},
+{
+  "model": "maintenance.maintenancerequest",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-04-13T13:15:51.428Z",
+    "updated_at": "2026-04-13T13:15:51.428Z",
+    "request_id": "MR-20260413131551",
+    "asset": 4,
+    "requested_by": [
+      "manager"
+    ],
+    "category": "REPAIR",
+    "priority": "HIGH",
+    "status": "SUBMITTED",
+    "description": "Computer not booting properly",
+    "photo": "",
+    "assigned_to": null,
+    "escalated": false,
+    "escalation_date": null
+  }
+},
+{
+  "model": "core.databasebackup",
+  "pk": 1,
+  "fields": {
+    "created_at": "2026-04-14T18:53:28.928Z",
+    "updated_at": "2026-04-14T18:53:28.973Z",
+    "filename": "backup_20260414_215328.sql",
+    "file_path": "C:\\Users\\PC\\Documents\\proo1\\backend\\backups\\backup_20260414_215328.sql",
+    "file_size": 0,
+    "status": "FAILED",
+    "backup_type": "MANUAL",
+    "created_by": [
+      "admin"
+    ],
+    "error_message": "[WinError 2] The system cannot find the file specified",
+    "completed_at": null
+  }
+},
+{
+  "model": "core.databasebackup",
+  "pk": 2,
+  "fields": {
+    "created_at": "2026-04-14T18:54:35.792Z",
+    "updated_at": "2026-04-14T18:54:37.609Z",
+    "filename": "backup_20260414_215435.json",
+    "file_path": "C:\\Users\\PC\\Documents\\proo1\\backend\\backups\\backup_20260414_215435.json",
+    "file_size": 97264,
+    "status": "COMPLETED",
+    "backup_type": "MANUAL",
+    "created_by": [
+      "admin"
+    ],
+    "error_message": null,
+    "completed_at": "2026-04-14T18:54:37.609Z"
+  }
+},
+{
+  "model": "core.databasebackup",
+  "pk": 3,
+  "fields": {
+    "created_at": "2026-04-14T19:09:24.286Z",
+    "updated_at": "2026-04-14T19:09:24.286Z",
+    "filename": "backup_20260414_220924.json",
+    "file_path": "C:\\Users\\PC\\Documents\\proo1\\backend\\backups\\backup_20260414_220924.json",
+    "file_size": 0,
+    "status": "IN_PROGRESS",
+    "backup_type": "MANUAL",
+    "created_by": [
+      "admin"
+    ],
+    "error_message": null,
+    "completed_at": null
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {},
+    "ip_address": "192.168.25.133",
+    "timestamp": "2026-03-31T17:32:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {},
+    "ip_address": "192.168.25.216",
+    "timestamp": "2026-04-10T12:38:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "CREATE",
+    "model_name": "Asset",
+    "object_id": "4",
+    "details": {
+      "name": "Reading Table",
+      "asset_id": "DMU-MAIN-FUR-00002"
+    },
+    "ip_address": "192.168.27.18",
+    "timestamp": "2026-03-26T23:16:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "Asset",
+    "object_id": "4",
+    "details": {
+      "field": "status",
+      "asset_id": "DMU-MAIN-FUR-00002"
+    },
+    "ip_address": "192.168.180.70",
+    "timestamp": "2026-03-27T12:19:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "CREATE",
+    "model_name": "Asset",
+    "object_id": "3",
+    "details": {
+      "name": "Office Desk",
+      "asset_id": "DMU-MAIN-FUR-00001"
+    },
+    "ip_address": "192.168.78.55",
+    "timestamp": "2026-03-29T16:49:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "Asset",
+    "object_id": "3",
+    "details": {
+      "field": "status",
+      "asset_id": "DMU-MAIN-FUR-00001"
+    },
+    "ip_address": "192.168.190.202",
+    "timestamp": "2026-04-07T18:26:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "CREATE",
+    "model_name": "Asset",
+    "object_id": "2",
+    "details": {
+      "name": "HP LaserJet Pro",
+      "asset_id": "DMU-MAIN-EQP-00002"
+    },
+    "ip_address": "192.168.128.108",
+    "timestamp": "2026-03-28T04:10:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "Asset",
+    "object_id": "2",
+    "details": {
+      "field": "status",
+      "asset_id": "DMU-MAIN-EQP-00002"
+    },
+    "ip_address": "192.168.87.233",
+    "timestamp": "2026-03-23T12:09:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "CREATE",
+    "model_name": "Asset",
+    "object_id": "1",
+    "details": {
+      "name": "Dell Optiplex 7090",
+      "asset_id": "DMU-MAIN-EQP-00001"
+    },
+    "ip_address": "192.168.74.248",
+    "timestamp": "2026-03-24T23:54:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "UPDATE",
+    "model_name": "Asset",
+    "object_id": "1",
+    "details": {
+      "field": "status",
+      "asset_id": "DMU-MAIN-EQP-00001"
+    },
+    "ip_address": "192.168.214.35",
+    "timestamp": "2026-04-13T07:52:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "CREATE",
+    "model_name": "MaintenanceRequest",
+    "object_id": "1",
+    "details": {
+      "request_id": "MR-20260413131551"
+    },
+    "ip_address": "192.168.33.163",
+    "timestamp": "2026-04-04T21:16:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 12,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "ASSIGN",
+    "model_name": "MaintenanceRequest",
+    "object_id": "1",
+    "details": {
+      "request_id": "MR-20260413131551"
+    },
+    "ip_address": "192.168.93.111",
+    "timestamp": "2026-04-02T00:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 13,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "STATUS_CHANGE",
+    "model_name": "MaintenanceRequest",
+    "object_id": "1",
+    "details": {
+      "status": "SUBMITTED",
+      "request_id": "MR-20260413131551"
+    },
+    "ip_address": "192.168.164.33",
+    "timestamp": "2026-03-27T21:54:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 14,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.107",
+    "timestamp": "2026-04-13T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 15,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.107",
+    "timestamp": "2026-04-13T11:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 16,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.133",
+    "timestamp": "2026-04-12T00:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 17,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.133",
+    "timestamp": "2026-04-12T05:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 18,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.129",
+    "timestamp": "2026-04-11T09:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 19,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.129",
+    "timestamp": "2026-04-11T14:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.123",
+    "timestamp": "2026-04-09T23:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.123",
+    "timestamp": "2026-04-10T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.129",
+    "timestamp": "2026-04-09T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.129",
+    "timestamp": "2026-04-09T08:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 24,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.134",
+    "timestamp": "2026-04-08T08:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 25,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.134",
+    "timestamp": "2026-04-08T15:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 26,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.174",
+    "timestamp": "2026-04-07T09:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 27,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.174",
+    "timestamp": "2026-04-07T12:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 28,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.137",
+    "timestamp": "2026-04-13T00:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 29,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.137",
+    "timestamp": "2026-04-13T03:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 30,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.174",
+    "timestamp": "2026-04-12T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 31,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.174",
+    "timestamp": "2026-04-12T07:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 32,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.133",
+    "timestamp": "2026-04-11T02:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 33,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.133",
+    "timestamp": "2026-04-11T03:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 34,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.159",
+    "timestamp": "2026-04-09T23:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 35,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.159",
+    "timestamp": "2026-04-10T02:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 36,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.157",
+    "timestamp": "2026-04-09T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 37,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.157",
+    "timestamp": "2026-04-09T09:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 38,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.149",
+    "timestamp": "2026-04-08T00:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 39,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.149",
+    "timestamp": "2026-04-08T05:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 40,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.145",
+    "timestamp": "2026-04-07T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 41,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.145",
+    "timestamp": "2026-04-07T05:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 42,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.198",
+    "timestamp": "2026-04-13T02:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 43,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.198",
+    "timestamp": "2026-04-13T05:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 44,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.124",
+    "timestamp": "2026-04-12T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 45,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.124",
+    "timestamp": "2026-04-12T07:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 46,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.122",
+    "timestamp": "2026-04-11T08:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 47,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.122",
+    "timestamp": "2026-04-11T13:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 48,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.154",
+    "timestamp": "2026-04-10T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 49,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.154",
+    "timestamp": "2026-04-10T08:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 50,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.145",
+    "timestamp": "2026-04-09T03:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 51,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.145",
+    "timestamp": "2026-04-09T08:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 52,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.120",
+    "timestamp": "2026-04-08T03:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 53,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.120",
+    "timestamp": "2026-04-08T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 54,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.100",
+    "timestamp": "2026-04-07T01:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 55,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.100",
+    "timestamp": "2026-04-07T04:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 56,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.143",
+    "timestamp": "2026-04-13T06:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 57,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.143",
+    "timestamp": "2026-04-13T07:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 58,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.147",
+    "timestamp": "2026-04-12T02:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 59,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.147",
+    "timestamp": "2026-04-12T08:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 60,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.170",
+    "timestamp": "2026-04-11T06:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 61,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.170",
+    "timestamp": "2026-04-11T13:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 62,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.185",
+    "timestamp": "2026-04-10T02:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 63,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.185",
+    "timestamp": "2026-04-10T05:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 64,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.163",
+    "timestamp": "2026-04-08T23:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 65,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.163",
+    "timestamp": "2026-04-09T01:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 66,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.106",
+    "timestamp": "2026-04-08T07:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 67,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.106",
+    "timestamp": "2026-04-08T09:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 68,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.112",
+    "timestamp": "2026-04-07T06:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 69,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.112",
+    "timestamp": "2026-04-07T14:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 70,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.194",
+    "timestamp": "2026-04-13T06:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 71,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.194",
+    "timestamp": "2026-04-13T11:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 72,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.196",
+    "timestamp": "2026-04-12T01:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 73,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.196",
+    "timestamp": "2026-04-12T05:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 74,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.117",
+    "timestamp": "2026-04-11T09:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 75,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.117",
+    "timestamp": "2026-04-11T16:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 76,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.159",
+    "timestamp": "2026-04-10T01:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 77,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.159",
+    "timestamp": "2026-04-10T07:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 78,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.164",
+    "timestamp": "2026-04-09T01:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 79,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.164",
+    "timestamp": "2026-04-09T03:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 80,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.144",
+    "timestamp": "2026-04-08T06:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 81,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.144",
+    "timestamp": "2026-04-08T14:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 82,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.193",
+    "timestamp": "2026-04-07T00:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 83,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.193",
+    "timestamp": "2026-04-07T08:58:29.125Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 84,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {},
+    "ip_address": "192.168.54.157",
+    "timestamp": "2026-03-25T21:50:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 85,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {},
+    "ip_address": "192.168.185.212",
+    "timestamp": "2026-03-22T01:37:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 86,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "CREATE",
+    "model_name": "Asset",
+    "object_id": "4",
+    "details": {
+      "name": "Reading Table",
+      "asset_id": "DMU-MAIN-FUR-00002"
+    },
+    "ip_address": "192.168.171.199",
+    "timestamp": "2026-03-20T19:53:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 87,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "UPDATE",
+    "model_name": "Asset",
+    "object_id": "4",
+    "details": {
+      "field": "status",
+      "asset_id": "DMU-MAIN-FUR-00002"
+    },
+    "ip_address": "192.168.213.81",
+    "timestamp": "2026-03-23T21:31:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 88,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "CREATE",
+    "model_name": "Asset",
+    "object_id": "3",
+    "details": {
+      "name": "Office Desk",
+      "asset_id": "DMU-MAIN-FUR-00001"
+    },
+    "ip_address": "192.168.172.124",
+    "timestamp": "2026-03-22T18:41:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 89,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "UPDATE",
+    "model_name": "Asset",
+    "object_id": "3",
+    "details": {
+      "field": "status",
+      "asset_id": "DMU-MAIN-FUR-00001"
+    },
+    "ip_address": "192.168.73.191",
+    "timestamp": "2026-03-14T01:52:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 90,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "CREATE",
+    "model_name": "Asset",
+    "object_id": "2",
+    "details": {
+      "name": "HP LaserJet Pro",
+      "asset_id": "DMU-MAIN-EQP-00002"
+    },
+    "ip_address": "192.168.19.93",
+    "timestamp": "2026-04-08T10:36:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 91,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "UPDATE",
+    "model_name": "Asset",
+    "object_id": "2",
+    "details": {
+      "field": "status",
+      "asset_id": "DMU-MAIN-EQP-00002"
+    },
+    "ip_address": "192.168.101.56",
+    "timestamp": "2026-04-04T09:05:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 92,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "CREATE",
+    "model_name": "Asset",
+    "object_id": "1",
+    "details": {
+      "name": "Dell Optiplex 7090",
+      "asset_id": "DMU-MAIN-EQP-00001"
+    },
+    "ip_address": "192.168.21.59",
+    "timestamp": "2026-03-26T02:44:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 93,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "UPDATE",
+    "model_name": "Asset",
+    "object_id": "1",
+    "details": {
+      "field": "status",
+      "asset_id": "DMU-MAIN-EQP-00001"
+    },
+    "ip_address": "192.168.226.208",
+    "timestamp": "2026-03-19T00:33:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 94,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "CREATE",
+    "model_name": "MaintenanceRequest",
+    "object_id": "1",
+    "details": {
+      "request_id": "MR-20260413131551"
+    },
+    "ip_address": "192.168.73.138",
+    "timestamp": "2026-04-03T10:04:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 95,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "ASSIGN",
+    "model_name": "MaintenanceRequest",
+    "object_id": "1",
+    "details": {
+      "request_id": "MR-20260413131551"
+    },
+    "ip_address": "192.168.241.10",
+    "timestamp": "2026-04-04T04:34:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 96,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "STATUS_CHANGE",
+    "model_name": "MaintenanceRequest",
+    "object_id": "1",
+    "details": {
+      "status": "SUBMITTED",
+      "request_id": "MR-20260413131551"
+    },
+    "ip_address": "192.168.12.232",
+    "timestamp": "2026-03-29T00:06:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 97,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.113",
+    "timestamp": "2026-04-13T00:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 98,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.113",
+    "timestamp": "2026-04-13T03:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 99,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.112",
+    "timestamp": "2026-04-12T01:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 100,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.112",
+    "timestamp": "2026-04-12T07:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 101,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.182",
+    "timestamp": "2026-04-10T23:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 102,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.182",
+    "timestamp": "2026-04-11T04:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 103,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.122",
+    "timestamp": "2026-04-10T04:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 104,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.122",
+    "timestamp": "2026-04-10T11:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 105,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.107",
+    "timestamp": "2026-04-09T00:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 106,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.107",
+    "timestamp": "2026-04-09T08:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 107,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.133",
+    "timestamp": "2026-04-08T08:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 108,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.133",
+    "timestamp": "2026-04-08T14:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 109,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.192",
+    "timestamp": "2026-04-07T01:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 110,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "192.168.1.192",
+    "timestamp": "2026-04-07T03:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 111,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.122",
+    "timestamp": "2026-04-13T02:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 112,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.122",
+    "timestamp": "2026-04-13T04:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 113,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.168",
+    "timestamp": "2026-04-12T01:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 114,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.168",
+    "timestamp": "2026-04-12T09:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 115,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.126",
+    "timestamp": "2026-04-11T00:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 116,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.126",
+    "timestamp": "2026-04-11T03:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 117,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.133",
+    "timestamp": "2026-04-10T06:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 118,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.133",
+    "timestamp": "2026-04-10T07:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 119,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.148",
+    "timestamp": "2026-04-09T05:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 120,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.148",
+    "timestamp": "2026-04-09T09:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 121,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.121",
+    "timestamp": "2026-04-08T01:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 122,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.121",
+    "timestamp": "2026-04-08T02:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 123,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.154",
+    "timestamp": "2026-04-07T05:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 124,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "192.168.1.154",
+    "timestamp": "2026-04-07T10:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 125,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.175",
+    "timestamp": "2026-04-13T00:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 126,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.175",
+    "timestamp": "2026-04-13T03:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 127,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.165",
+    "timestamp": "2026-04-12T09:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 128,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.165",
+    "timestamp": "2026-04-12T11:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 129,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.138",
+    "timestamp": "2026-04-11T00:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 130,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.138",
+    "timestamp": "2026-04-11T06:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 131,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.130",
+    "timestamp": "2026-04-09T23:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 132,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.130",
+    "timestamp": "2026-04-10T05:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 133,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.146",
+    "timestamp": "2026-04-09T05:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 134,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.146",
+    "timestamp": "2026-04-09T09:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 135,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.131",
+    "timestamp": "2026-04-08T05:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 136,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.131",
+    "timestamp": "2026-04-08T09:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 137,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.140",
+    "timestamp": "2026-04-07T07:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 138,
+  "fields": {
+    "user": [
+      "pms_user"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "1",
+    "details": {
+      "username": "pms_user"
+    },
+    "ip_address": "192.168.1.140",
+    "timestamp": "2026-04-07T13:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 139,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.166",
+    "timestamp": "2026-04-13T01:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 140,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.166",
+    "timestamp": "2026-04-13T03:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 141,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.171",
+    "timestamp": "2026-04-12T00:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 142,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.171",
+    "timestamp": "2026-04-12T01:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 143,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.192",
+    "timestamp": "2026-04-11T09:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 144,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.192",
+    "timestamp": "2026-04-11T10:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 145,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.158",
+    "timestamp": "2026-04-10T04:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 146,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.158",
+    "timestamp": "2026-04-10T08:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 147,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.100",
+    "timestamp": "2026-04-09T03:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 148,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.100",
+    "timestamp": "2026-04-09T05:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 149,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.199",
+    "timestamp": "2026-04-08T04:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 150,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.199",
+    "timestamp": "2026-04-08T12:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 151,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.147",
+    "timestamp": "2026-04-07T03:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 152,
+  "fields": {
+    "user": [
+      "supervisor"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "4",
+    "details": {
+      "username": "supervisor"
+    },
+    "ip_address": "192.168.1.147",
+    "timestamp": "2026-04-07T06:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 153,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.102",
+    "timestamp": "2026-04-13T06:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 154,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.102",
+    "timestamp": "2026-04-13T08:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 155,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.174",
+    "timestamp": "2026-04-12T07:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 156,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.174",
+    "timestamp": "2026-04-12T13:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 157,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.137",
+    "timestamp": "2026-04-11T07:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 158,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.137",
+    "timestamp": "2026-04-11T08:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 159,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.113",
+    "timestamp": "2026-04-10T05:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 160,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.113",
+    "timestamp": "2026-04-10T13:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 161,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.176",
+    "timestamp": "2026-04-09T06:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 162,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.176",
+    "timestamp": "2026-04-09T11:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 163,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.102",
+    "timestamp": "2026-04-08T00:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 164,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.102",
+    "timestamp": "2026-04-08T04:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 165,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.144",
+    "timestamp": "2026-04-07T05:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 166,
+  "fields": {
+    "user": [
+      "technician"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "5",
+    "details": {
+      "username": "technician"
+    },
+    "ip_address": "192.168.1.144",
+    "timestamp": "2026-04-07T09:59:45.628Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 167,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:13:22.711Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 168,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:13:26.984Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 169,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:13:30.925Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 170,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:16:27.177Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 171,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:16:32.940Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 172,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:22:56.853Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 173,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "role": "PROPERTY_MANAGER",
+      "username": "manager"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:23:15.072Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 174,
+  "fields": {
+    "user": [
+      "manager"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "3",
+    "details": {
+      "username": "manager"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:23:19.442Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 175,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-13T18:23:26.091Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 176,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T08:47:21.929Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 177,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T08:48:49.038Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 178,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T17:55:23.312Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 179,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T17:55:49.360Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 180,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGOUT",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T17:56:16.631Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 181,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T17:56:59.792Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 182,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:10:15.293Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 183,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:23:13.891Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 184,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "system_name",
+        "sla_emergency",
+        "email_notifications"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:23:21.249Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 185,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "system_name",
+        "system_email",
+        "timezone",
+        "date_format",
+        "sla_emergency",
+        "sla_high",
+        "sla_medium",
+        "sla_low",
+        "auto_assignment",
+        "preventive_maintenance",
+        "email_notifications",
+        "sms_notifications",
+        "notify_on_create",
+        "notify_on_assign",
+        "notify_on_complete",
+        "notify_on_overdue",
+        "password_min_length",
+        "password_require_uppercase",
+        "password_require_numbers",
+        "password_require_special",
+        "session_timeout",
+        "max_login_attempts",
+        "max_image_size",
+        "max_report_size",
+        "allowed_image_types",
+        "allowed_report_types",
+        "auto_backup",
+        "backup_frequency",
+        "backup_retention"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:29:14.140Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 186,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "system_name",
+        "system_email",
+        "timezone",
+        "date_format",
+        "sla_emergency",
+        "sla_high",
+        "sla_medium",
+        "sla_low",
+        "auto_assignment",
+        "preventive_maintenance",
+        "email_notifications",
+        "sms_notifications",
+        "notify_on_create",
+        "notify_on_assign",
+        "notify_on_complete",
+        "notify_on_overdue",
+        "password_min_length",
+        "password_require_uppercase",
+        "password_require_numbers",
+        "password_require_special",
+        "session_timeout",
+        "max_login_attempts",
+        "max_image_size",
+        "max_report_size",
+        "allowed_image_types",
+        "allowed_report_types",
+        "auto_backup",
+        "backup_frequency",
+        "backup_retention"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:30:24.644Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 187,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "system_name",
+        "system_email",
+        "timezone",
+        "date_format",
+        "sla_emergency",
+        "sla_high",
+        "sla_medium",
+        "sla_low",
+        "auto_assignment",
+        "preventive_maintenance",
+        "email_notifications",
+        "sms_notifications",
+        "notify_on_create",
+        "notify_on_assign",
+        "notify_on_complete",
+        "notify_on_overdue",
+        "password_min_length",
+        "password_require_uppercase",
+        "password_require_numbers",
+        "password_require_special",
+        "session_timeout",
+        "max_login_attempts",
+        "max_image_size",
+        "max_report_size",
+        "allowed_image_types",
+        "allowed_report_types",
+        "auto_backup",
+        "backup_frequency",
+        "backup_retention"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:30:42.794Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 188,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:34:09.547Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 189,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "system_name",
+        "system_email",
+        "timezone",
+        "date_format"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:34:13.812Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 190,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "sla_emergency",
+        "sla_high",
+        "sla_medium",
+        "sla_low",
+        "auto_assignment",
+        "preventive_maintenance"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:34:16.153Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 191,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "email_notifications",
+        "sms_notifications",
+        "notify_on_create",
+        "notify_on_assign",
+        "notify_on_complete",
+        "notify_on_overdue"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:34:18.505Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 192,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "password_min_length",
+        "password_require_uppercase",
+        "password_require_numbers",
+        "password_require_special",
+        "session_timeout",
+        "max_login_attempts"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:34:20.652Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 193,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "max_image_size",
+        "max_report_size",
+        "allowed_image_types",
+        "allowed_report_types"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:34:22.795Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 194,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "updated_by": "admin",
+      "fields_updated": [
+        "auto_backup",
+        "backup_frequency",
+        "backup_retention"
+      ]
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:34:24.924Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 195,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:36:03.872Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 196,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "UPDATE",
+    "model_name": "SystemSettings",
+    "object_id": "1",
+    "details": {
+      "action": "reset_to_defaults",
+      "reset_by": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:36:06.128Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 197,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:53:24.635Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 198,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "LOGIN",
+    "model_name": "User",
+    "object_id": "2",
+    "details": {
+      "role": "SUPER_ADMIN",
+      "username": "admin"
+    },
+    "ip_address": "127.0.0.1",
+    "timestamp": "2026-04-14T18:54:31.441Z"
+  }
+},
+{
+  "model": "core.auditlog",
+  "pk": 199,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "action": "CREATE",
+    "model_name": "DatabaseBackup",
+    "object_id": "2",
+    "details": {
+      "type": "MANUAL",
+      "size_mb": 0.09,
+      "filename": "backup_20260414_215435.json"
+    },
+    "ip_address": null,
+    "timestamp": "2026-04-14T18:54:37.640Z"
+  }
+}
+]

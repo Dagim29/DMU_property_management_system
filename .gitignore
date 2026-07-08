@@ -1,0 +1,71 @@
+# ── Python / Django ──────────────────────────────────────────────────────────
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+env/
+.Python
+.venv/
+
+# Django specifics
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+/backend/media/
+/backend/staticfiles/
+
+# Environment variables (NEVER commit these)
+.env
+.env.local
+.env.production
+.env.*.local
+backend/.env
+
+# ── Node / React ─────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Frontend build output
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.kiro/
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Testing / Coverage ────────────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+# (keep docker-compose.yml but ignore local overrides)
+docker-compose.override.yml
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.bak
+*.tmp
+add_grid_view.js
