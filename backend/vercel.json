@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "buildCommand": "pip install -r requirements.txt && python manage.py migrate --no-input && python manage.py collectstatic --no-input",
+  "builds": [
+    {
+      "src": "config/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "config/wsgi.py"
+    }
+  ]
+}
