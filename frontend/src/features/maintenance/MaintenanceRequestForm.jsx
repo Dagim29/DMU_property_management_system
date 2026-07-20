@@ -171,7 +171,7 @@ const MaintenanceRequestForm = () => {
       {/* Header */}
       <div className="mb-8 animate-slide-up">
         <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-8 text-white shadow-xl">
-          <h1 className="text-4xl font-bold mb-2">New Maintenance Request</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold mb-2">New Maintenance Request</h1>
           <p className="text-purple-100 text-lg">Submit a maintenance request for an asset</p>
         </div>
       </div>

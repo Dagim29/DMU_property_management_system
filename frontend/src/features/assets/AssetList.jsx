@@ -617,7 +617,7 @@ const AssetList = () => {
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white shadow-xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div>
-              <h1 className="text-4xl font-bold mb-2">Asset Inventory</h1>
+              <h1 className="text-2xl sm:text-4xl font-bold mb-2">Asset Inventory</h1>
               <p className="text-blue-100 text-lg">Manage and track all system assets</p>
             </div>
             <div className="flex flex-wrap gap-3 justify-end">

@@ -146,20 +146,20 @@ const LandingPage = () => {
 
       {/* ── Navigation Bar ─────────────────────────────────────────────── */}
       <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center p-1">
+        <div className="container mx-auto px-4 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-lg flex items-center justify-center p-1 flex-shrink-0">
                 <img src={dmuLogo} alt="DMU Logo" className="w-full h-full object-contain" />
               </div>
-              <div>
-                <h1 className="text-lg font-bold text-[#0A2540]">DMU Property Management System</h1>
-                <p className="text-xs text-gray-600">Debre Markos University</p>
+              <div className="min-w-0">
+                <h1 className="text-sm sm:text-lg font-bold text-[#0A2540] truncate max-w-[180px] sm:max-w-none">DMU Property Management</h1>
+                <p className="text-[10px] sm:text-xs text-gray-600 hidden sm:block">Debre Markos University</p>
               </div>
             </div>
             <button
               onClick={() => navigate('/login')}
-              className="bg-[#0A2540] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#D4AF37] hover:text-[#0A2540] transition-all duration-300"
+              className="bg-[#0A2540] text-white px-4 py-2 sm:px-6 rounded-lg font-semibold hover:bg-[#D4AF37] hover:text-[#0A2540] transition-all duration-300 flex-shrink-0 text-sm sm:text-base"
             >
               Sign In
             </button>
@@ -185,7 +185,7 @@ const LandingPage = () => {
                 <span className="text-sm font-medium">System Operational</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Property Management
                 <span className="block text-[#D4AF37] mt-2">System</span>
               </h1>
@@ -205,20 +205,20 @@ const LandingPage = () => {
               </div>
 
               {/* Animated Stats */}
-              <div ref={statsRef} className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/20">
+              <div ref={statsRef} className="grid grid-cols-3 gap-4 sm:gap-6 mt-12 pt-8 border-t border-white/20">
                 <div>
-                  <div className="text-3xl font-bold text-[#D4AF37] mb-1">{assetsCount.toLocaleString()}+</div>
-                  <div className="text-sm text-blue-200">Assets Managed</div>
+                  <div className="text-xl sm:text-3xl font-bold text-[#D4AF37] mb-1">{assetsCount.toLocaleString()}+</div>
+                  <div className="text-[10px] sm:text-sm text-blue-200 leading-tight">Assets Managed</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#D4AF37] mb-1">{slaCount}%</div>
-                  <div className="text-sm text-blue-200">SLA Compliance</div>
+                  <div className="text-xl sm:text-3xl font-bold text-[#D4AF37] mb-1">{slaCount}%</div>
+                  <div className="text-[10px] sm:text-sm text-blue-200 leading-tight">SLA Compliance</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#D4AF37] mb-1">
+                  <div className="text-xl sm:text-3xl font-bold text-[#D4AF37] mb-1">
                     {(uptimeCount / 10).toFixed(1)}%
                   </div>
-                  <div className="text-sm text-blue-200">Uptime</div>
+                  <div className="text-[10px] sm:text-sm text-blue-200 leading-tight">Uptime</div>
                 </div>
               </div>
             </div>

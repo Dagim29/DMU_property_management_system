@@ -124,10 +124,10 @@ export default function AssetHistory() {
             <ArrowLeft className="h-4 w-4" />
             Back to My Assets
           </Link>
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
-              <h1 className="text-4xl font-bold mb-2 flex items-center gap-3">
-                <Clock className="h-10 w-10" />
+              <h1 className="text-2xl sm:text-4xl font-bold mb-2 flex items-center gap-3">
+                <Clock className="h-8 w-8 sm:h-10 sm:w-10" />
                 Asset History & Timeline
               </h1>
               <p className="text-purple-100 text-lg mb-4">

@@ -74,7 +74,7 @@ const LoginPortal = () => {
       {/* Back Button - Minimal Arrow at Edge */}
       <button
         onClick={() => navigate('/')}
-        className="fixed top-4 left-4 z-50 p-2 text-white hover:text-[#D4AF37] transition-colors duration-300"
+        className="fixed top-4 left-4 z-50 p-2 text-gray-800 lg:text-white hover:text-[#D4AF37] transition-colors duration-300"
         aria-label="Back to home"
       >
         <FaArrowLeft className="text-2xl" />

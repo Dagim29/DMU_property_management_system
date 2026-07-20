@@ -83,7 +83,7 @@ export default function OwnerDashboard() {
           
           <div className="relative z-10 flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold mb-1">
+              <h1 className="text-xl sm:text-3xl font-bold mb-1">
                 Welcome back, {user?.first_name || user?.username}! 👋
               </h1>
               <p className="text-purple-100">

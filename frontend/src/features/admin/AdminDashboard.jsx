@@ -544,14 +544,14 @@ const AdminDashboard = () => {
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-48 translate-y-48"></div>
           </div>
           
-          <div className="relative flex justify-between items-start">
+          <div className="relative flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 bg-white/20 backdrop-blur-sm rounded-lg">
                   <FaTachometerAlt className="text-2xl" />
                 </div>
                 <div>
-                  <h1 className="text-3xl font-bold">
+                  <h1 className="text-xl sm:text-3xl font-bold">
                     Admin Control Center
                   </h1>
                   <p className="text-indigo-100 text-sm flex items-center gap-2 mt-1">
@@ -560,7 +560,7 @@ const AdminDashboard = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 mt-3">
+              <div className="flex flex-wrap items-center gap-2 mt-3">
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm">
                   <FaCalendarAlt className="text-xs" />
                   <span className="font-medium">
@@ -575,7 +575,7 @@ const AdminDashboard = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               <button
                 onClick={handleRefresh}
                 disabled={refreshing}

@@ -141,10 +141,10 @@ export default function MyRequests() {
       {/* Header */}
       <div className="mb-8 animate-slide-up">
         <div className="bg-gradient-to-r from-orange-600 via-orange-700 to-red-700 rounded-2xl p-8 text-white shadow-xl">
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
-              <h1 className="text-4xl font-bold mb-2 flex items-center gap-3">
-                <Wrench className="h-10 w-10" />
+              <h1 className="text-2xl sm:text-4xl font-bold mb-2 flex items-center gap-3">
+                <Wrench className="h-8 w-8 sm:h-10 sm:w-10" />
                 My Maintenance Requests
               </h1>
               <p className="text-orange-100 text-lg">

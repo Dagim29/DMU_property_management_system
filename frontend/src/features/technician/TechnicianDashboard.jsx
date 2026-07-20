@@ -105,14 +105,14 @@ export default function TechnicianDashboard() {
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-48 translate-y-48"></div>
           </div>
 
-          <div className="relative flex justify-between items-start">
+          <div className="relative flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-2 bg-white/20 backdrop-blur-sm rounded-lg">
                   <Wrench className="w-6 h-6" />
                 </div>
                 <div>
-                  <h1 className="text-3xl font-bold">
+                  <h1 className="text-xl sm:text-3xl font-bold">
                     {greeting}, {user?.first_name}! 👋
                   </h1>
                   <p className="text-blue-100 text-sm flex items-center gap-2 mt-1">
@@ -121,7 +121,7 @@ export default function TechnicianDashboard() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 mt-3">
+              <div className="flex flex-wrap items-center gap-2 mt-3">
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-lg text-sm">
                   <Calendar className="w-4 h-4 text-blue-200" />
                   <span className="font-medium">
@@ -138,7 +138,7 @@ export default function TechnicianDashboard() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               <button
                 onClick={handleClockToggle}
                 disabled={clockLoading}
